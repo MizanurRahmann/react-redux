@@ -12,9 +12,6 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <ItemContainer cake />
-        <ItemContainer iceCream />
-
         <div style={{width: "80%", margin: "auto", marginTop: "20px", padding: "50px", textAlign: "right"}}>
           <CakeContainer />
           <IceCreamContainer />
@@ -24,6 +21,11 @@ function App() {
 
         <div style={{width: "80%", marginTop: "20px", padding: "50px", textAlign: "left"}}>
           <NewCakeContainer />
+        </div>
+        
+        <div style={{width: "80%", marginTop: "20px", padding: "50px", textAlign: "right"}}>
+          <ItemContainer cake />
+          <ItemContainer iceCream />
         </div>
       </div>
     </Provider>
