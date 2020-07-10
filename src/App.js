@@ -6,11 +6,15 @@ import CakeContainer from './components/CakeContainer';
 import HooksCakeContainer from './components/HooksCakeContainer';
 import IceCreamContainer from './components/IceCreamContainer';
 import NewCakeContainer from './components/NewCakeContainer';
+import ItemContainer from './components/ItemContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <ItemContainer cake />
+        <ItemContainer iceCream />
+
         <div style={{width: "80%", margin: "auto", marginTop: "20px", padding: "50px", textAlign: "right"}}>
           <CakeContainer />
           <IceCreamContainer />
